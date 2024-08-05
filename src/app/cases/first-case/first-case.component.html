@@ -1,3 +1,9 @@
 <p>
   first-case works!
 </p>
+<ion-button (click)="incrementar()">Sumar</ion-button>
+<p>Contador: {{ contador }}</p>
+
+<ion-item *ngIf="mostrarMensaje">
+  Felicidades, ya eres mayor de edad!
+</ion-item>

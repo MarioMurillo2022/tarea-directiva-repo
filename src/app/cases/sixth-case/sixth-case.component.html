@@ -1,3 +1,17 @@
 <p>
   sixth-case works!
 </p>
+<ion-button [ngSwitch]="colorButton">
+  <ng-template ngSwitchCase="primary">
+    Botón primario
+  </ng-template>
+  <ng-template ngSwitchCase="dark">
+    Botón oscuro
+  </ng-template>
+  <ng-template ngSwitchCase="danger">
+    Botón de peligro
+  </ng-template>
+  <ng-template ngSwitchDefault>
+    Color no válido
+  </ng-template>
+</ion-button>
